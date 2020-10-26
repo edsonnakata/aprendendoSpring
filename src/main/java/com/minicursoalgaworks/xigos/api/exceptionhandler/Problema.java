@@ -3,7 +3,11 @@ package com.minicursoalgaworks.xigos.api.exceptionhandler;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 /*Classe para montar o padrão da resposta de erro*/
+@JsonInclude(Include.NON_NULL) // só incluir na resposta JSON os valores não nulos
 public class Problema {
 	private Integer status;
 	private LocalDateTime dataHora;
