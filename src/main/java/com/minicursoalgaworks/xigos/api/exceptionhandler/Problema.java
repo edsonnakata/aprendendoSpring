@@ -1,6 +1,5 @@
 package com.minicursoalgaworks.xigos.api.exceptionhandler;
 
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.util.List;
 
